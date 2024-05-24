@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: bisque;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 5px;
+}
+
+.company-logo img {
+    width: 220px;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+
+ body.dark-mode {
+            background-color: #1a1a1a;
+            color: #dcdcdc;
+} 
+
+.card.dark-mode{
+    background-color: #1a1a1a;
+}
+    nav {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .nav-item.active {
+        color: var(--accent-color);
+        transform: scale(1.1);
+    }
+
+    .search-button {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 8px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .search-button:hover {
+        background-color: var(--accent-color-dark);
+        transform: translateY(-2px);
+    }
+
+  
+    .card {
+        width: 360px;
+        min-height: 400px;
+        box-shadow: 0 0 4px #d4ecff;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #fff;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 1px 1px 8px #d4ecff;
+        background-color: #f9fdff;
+        transform: translateY(-5px);
+        transform: translateY(5px);
+    }
+
+    body {
+        background-image: radial-gradient(#c2c0c0);
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    h3 {
+        color: var(--accent-color);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .company-logo img {
+        max-width: 340px;
+       
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+    }
+
+    .company-logo img:hover {
+        transform: scaleX(1.2)
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .nav-item:hover {
+        color: var(--accent-color);
+    }
+
+    .search-button {
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+    }
+
+    .search-button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+        transform: translate(-50%, -50%) rotate(45deg);
+        z-index: 0;
+    }
+
+    .search-button:hover::before {
+        width: 0;
+        height: 0;
+        top: 100%;
+        left: 100%;
+    }
+
+    .search-button span {
+        position: relative;
+        z-index: 1;
+    }
+
+    .card {
+        perspective: 1500px;
+    }
+
+    .card:hover .card-header img {
+        transform: rotateY(180deg);
+    }
+
+    .card-header img {
+        transition: transform 0.7s ease-in-out;
+    }
